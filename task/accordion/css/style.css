@@ -1,0 +1,9 @@
+.card{
+  width:25%;
+  list-style-type:none;
+  border:0;
+}
+
+.card-header{
+  cursor: pointer;
+}
