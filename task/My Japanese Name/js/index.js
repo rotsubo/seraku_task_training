@@ -8,6 +8,7 @@ $(".slider_main button").remove();
 var slider = $('.slider_steps');
 var navi = $('.slider_navi ul');
 var navi_li = $('.slider_navi ul li');
+
 //steps-slick
   //index番号を付与
   $('.slider_navi ul li').each(function(){
@@ -16,11 +17,13 @@ var navi_li = $('.slider_navi ul li');
     });
 //スライダー本体
   $('.slider_steps').slick({
-    autoplay:true
+    autoplay:true,
+    draggable:false
   });
 //現在のスライドのindexを取得
 var length = $('.slider_navi ul li').length;
 var current_slide ;
+
 //スライド移動の直前に発火
 $(slider).on('beforeChange',function(){
   var slideIndex = slider.slick('slickCurrentSlide') + 1;
@@ -40,4 +43,14 @@ $(slider).on('beforeChange',function(){
     $(navieq).removeClass('active')
   };
     };
+
+//クリックで該当スライドへ移動
+$(navi_li).on("click",function clickNavi(){
+  $(navi_li).removeClass("active");
+  $(this).addClass("active");
+  var currentIndex = $(this).attr("slideIndex");
+  $(slider).slick('slickGoTo',currentIndex);
+  return false;
+});
+
 });

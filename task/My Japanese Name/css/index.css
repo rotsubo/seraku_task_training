@@ -219,6 +219,7 @@ aside p{
   background-color:none;
   color:red;
   font-size: 1.3rem;
+  cursor:pointer;
 }
 .slider_navi ul li:first-child{
   border-radius:20px 0 0 20px;
