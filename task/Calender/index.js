@@ -1,0 +1,1 @@
+const mydate = new Date();

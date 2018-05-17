@@ -1,0 +1,31 @@
+[
+  {
+    "team":"real-sociedad",
+    "player":[
+      {
+        "name":"prieto",
+        "name":"Illamendi",
+        "name":"oyarzabal"
+      }
+    ]
+  },
+  {
+    "team":"milan",
+    "player":[
+      {
+        "name":"silva",
+        "name":"donnarunma",
+        "name":"kaka",
+        "name":"shevchenco"
+      }
+    ]
+  },
+  {
+    "team":"broncos",
+    "player":[
+      {"name":"elway", "number":"7"},
+      {"name":"manning", "number":"18"},
+      {"name":"bonmiller", "number":"58"}
+    ]
+  }
+]
